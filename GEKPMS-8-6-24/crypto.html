@@ -1,0 +1,1060 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>gekpms cry</title>
+  <meta charset="UTF-8">
+  <meta name="description"
+    content=" GEKPMS" />
+  <meta name="keywords" content="Indian stock market average calculator. average calculator, stock calculator, percentage calculator,  cash and carry calculator, Stock prices, Average, Calculation, Performance, Investors, Time period, Investment decisions, Spreadsheet, Software program, Stock charting, Technical analysis, Analyzing, Comparison, Investment performance, Stock market,GEKPMS_all___CALULATER,STOCK BROKRAGE CALCULATER.">
+  <meta name="author" content="PARAMJIT MEHMI">
+  <meta property="og:title" content="GEKPMS" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Styles -->
+ <link rel="stylesheet" type="text/css" href="gqr.css">
+ <link rel="stylesheet" type="text/css" href="crypto.CSS">
+   <!--link rel="stylesheet" href="./style.css"--->
+ <style> 
+
+  </style>
+
+<!---------sidebar code 2  ---------->
+  <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <pre>        </pre>    <a href="index.html" style="color: black;">Home</a>
+<script>
+    /*sidebar menu section click*/
+    
+    // Created by gekpms
+
+$(document).ready(main);
+
+var a = 2 ;
+
+function main() {
+    $('#mehmiss').click(function(){
+        if(a == 2){
+            $('#sidebar').animate({
+                    left: '0'
+            },700);
+            a = 1;
+        }
+         else {
+            a = 2;
+            $('#sidebar ').animate({
+                    left: '-100%'
+            },700);    }
+    });
+    $('section, a').click(function(){
+    if(a == 1){
+        a = 2;
+            $('#sidebar ').animate({
+                    left: '-100%'
+        },700);}});
+        
+            
+    // toggle nav
+            $("#btn").click(()=>{
+                $("#nav").toggleClass("act");
+                $("#btn").toggleClass("act")
+            });
+            // outside click to hide nav
+            document.onclick = ((e)=>{
+                if(e.target.id !== 'nav' && e.target.id !== 'btn'){
+                     $("#nav").removeClass("act");
+                $("#btn").removeClass("act")
+                }
+            });
+       /*_____FONTE LODING_APP___*/
+
+
+var screen = document.getElementById("screen");
+
+function splash() {
+    var splashContainer = document.getElementById('splash');
+    splashContainer.style.display = 'none';
+}
+setTimeout(splash,15000);
+
+var check =document.getElementById("check");
+if(check.checked){
+ console.log("check");
+}
+
+/*_______end______lodinG_*/
+
+
+}
+  </script>
+ <!---------sidebar code 2  ------str---->
+ <header>
+        <br><div id="btn">
+        <div class="bar"></div>
+    </div>
+        <nav id="nav">
+     <ul> 
+      <li>
+      <a href="INDEX.html">Home</a>
+      <br>
+<a href="CALAVG.html"id="xc" title="Stock Average Calculator" class="" onclick="activeSection('xc')">average_calculater</a>
+  </li>
+  <br>
+   <li id="ac" title="Stock Average Calculator" class="active" onclick="activeSection('ac')" >Stock Average Calculator</li>
+    <br>
+update-[1]17/9/23 <br>
+update-[2] <br>
+update-[3] <br>
+update-[4] <br>
+update-[5] <br>
+update-[5]<br>
+</div>
+</div></ul></nav>
+
+
+<!---------sidebar code 2  ------end ---->
+<div class="container-fluid wrapper-body">
+    <div class="row">
+      <div class="top-menu">
+        <ul>
+    <li id="ac" title="Stock Average Calculator" class="active" onclick="activeSection('ac')" >Stock Average Calculator</li>
+<li id="sc" title="SIP Calculator" class="" onclick="activeSection('sc')">SIP Calculator</li>
+
+          <li id="pc" title="Percentage Calculator" class="" onclick="activeSection('pc')">Percentage Calculator</li>
+          <li id="bc" title=" Brokerage Calculator" class="" onclick="activeSection('bc')"> Brokerage Calculator</li>
+ <li id="cy" title="crypto average calculator" class="" onclick="activeSection('cy')"> Crypto Currency Average Price</li>
+  <!-- <li id="bc" title=" Brokerage Calculator" class="" onclick="activeSection('bc')"> Brokerage Calculator</li-->
+
+        </ul>
+      </div>
+    </div> 
+
+
+<!--------- ------Stock Average Calculator ---->
+
+<div id="average-calculator">
+  <div class="syl"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <header>
+            <h2 class="headers"></h2>
+          </header>
+          <hr />
+        </div>
+      </div>
+      <!----------------------------------------------------------------------------------------->
+
+      <div class="row">
+        <div class="col-md-3 st">
+<!----------------------------------------------------------------------------------------->
+
+          <h4>First Purchase</h3>
+            <hr>
+            <div>
+              <label style="float:left;margin-right:10px;">Quantity share</label>
+              <input class="form-control" type="number" id="units1" placeholder="50" autocomplete="off"
+                onchange="unitChanged('units1','error1')" />
+              <span id='error1'></span>
+            </div>
+            <div style="margin-top:15px">
+              <label style="float:left;margin-right:10px;">Price per share</label>
+              <input class="form-control" type="number" id="Price1" placeholder="1500" autocomplete="off"
+                onchange="unitChanged('Price1','error2')" />
+              <span id='error2'></span>
+            </div>
+        </div>
+        <div class="col-md-3 st">
+          <h4>Second Purchase</h3>
+            <hr>
+            <div>
+              <label style="float:left;margin-right:10px;">Quantity share</label>
+              <input class="form-control" type="number" id="units2" placeholder="100" autocomplete="off"
+                onchange="unitChanged('units2','error3')" />
+              <span id='error3'></span>
+            </div>
+            <div style="margin-top:15px">
+              <label style="float:left;margin-right:10px;">Price per share</label>
+              <input class="form-control" type="number" id="Price2" placeholder="1300" autocomplete="off"
+                onchange="unitChanged('Price2','error4');getAverage()">
+              <span id='error4'></span>
+            </div>
+        </div>
+
+        <div class="col-md-1 st">
+        </div>
+        <div class="col-md-4 st banner-ad-desktop">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+          <h5 id="investedamount1"></h5>
+        </div>
+        <div class="col-md-3">
+          <h5 id="investedamount2"></h5>
+        </div>
+      </div>
+      <!----------------------------------------------------------------------------------------->
+
+      <div class="row">
+        <div class="col-md-12 st">
+          <h5 id="result"></h5>
+        </div>
+        <!----------------------------------------------------------------------------------------->
+
+        <div class="col-md-12 st">
+          <button class="btn btn-success" onclick="getAverage()"> Calculate Average</button>
+          <button class="btn btn-warning" onclick="clearFields()">Clear Fields</button>
+        </div>
+        <div class="col-md-12 d-block d-md-none display-mobile-ad">
+        <!--  <div id="buttonInstall"><image title="Download" src="/stockaveragecalculator/images/download.jpg" height="40px" width="40px" />Install App</div-->
+        </div>
+      </div>
+    </div>
+
+<!--------- ------Stock Average Calculator -- END-->                
+ <!--sipcalculater--->
+    
+    <div id="sip-calculator" class="hide">
+      <div class="row">
+        <div class="col-md-12">
+          <header>
+            <h2 class="headers"><!--SIP(Systematic Investment Plan) calculator--></h2>
+          </header>
+          <hr />
+        </div>
+      </div>
+<!----------------------------------------------------------------------------------------->
+      <div class="row">
+        <div id="sip-result-wrapper" class="col-md-4">
+          <div>
+            <label style="float:left;margin-right:10px;">Monthly Investment Amount</label>
+
+            <input class="form-control" type="number" id="investment" placeholder="500" autocomplete="off" onchange="sipCalculator()" />
+            <span id='error1'></span>
+          </div> 
+
+          <div style="margin-top:15px">
+            <label style="float:left;margin-right:10px;">Investment Period in years</label>
+            <input class="form-control" type="number" id="years" placeholder="10" autocomplete="off" onchange="sipCalculator()" />
+            <span id='error2'></span>
+          </div>
+
+          <div style="margin-top:15px">
+            <label style="float:left;margin-right:10px;">Expected Annual Returns(%)</label>
+            <input class="form-control" type="number" id="rateOfInterest" placeholder="5%" autocomplete="off"
+              onchange="sipCalculator()" />
+            <span id='error2'></span>
+          </div>
+        </div>
+<!----------------------------------------------------------------------------------------->
+
+        <div class="col-md-2">
+        </div>
+        <div class="col-md-4 banner-ad-desktop">
+        </div>
+      </div>
+      <!----------------------------------------------------------------------------------------->
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="r-sip"> 
+
+            
+            <div class="results">Expected Amount : <span id="tm">0</span> </div>
+            <hr />
+            <div class="results"> Amount Invested : <span id="im">0</span></div>
+            <hr>
+            <div class="results">Total Gain : <span id="gm">0</span> </div>
+          </div>
+
+        </div>
+      </div>
+      <!----------------------------------------------------------------------------------------->
+
+      <div class="row">
+        <div class="col-md-12 st">
+          <button class="btn btn-success" onclick="sipCalculator()"> Calculate</button>
+          <button class="btn btn-warning" onclick="clearFields1()">Clear Fields</button>
+        </div>
+        <div class="col-md-12 d-block d-md-none display-mobile-ad">
+   <!----------------------------------------------------------------------------------------->
+      
+        </div>
+      </div>
+    </div>
+
+
+<!--------- ------sipCalculator -END--->
+<!--------- ----percentage-calculator---->
+
+    <div id="percentage-calculator" class="hide">
+      <div class="row">
+        <div class="col-md-12">
+          <header>
+            <h2 class="headers"></h2>
+          </header>
+          <hr />
+        </div>
+      </div>
+      <!----------------------------------------------------------------------------------------->
+      <div class="row">
+        <div id="percentage-result-wrapper" class="col-md-4">
+          <div class="percentage-wrapper">
+            <label>What is </label>
+            <input class="form-control percentage-input" type="number" id="percentage" placeholder="5" autocomplete="off" onchange="checkPercentage()" />
+          </div>
+
+          <div class="percentage-wrapper">
+            <label>% (Percentage) of </label>
+            <input class="form-control percentage-input" type="number" id="percentageNumber" placeholder="1000" autocomplete="off" onchange="checkPercentage()" />
+            <label>?</label>
+          </div>
+        </div>
+        <!----------------------------------------------------------------------------------------->
+
+        <div class="col-md-8">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-4 col-xs-12">
+          <div class="r-sip">
+            <div class="results">Result : <span id="percentageResult">0</span> </div>
+          </div>
+        </div>
+        <div class="col-md-2 ans-btn-wrapper">
+    
+          <button class="btn btn-success ans-btn"> Answer</button>
+        <!----------------------------------------------------------------------------------------->
+   <button class="btn btn-warning ans-btn" onclick="clearFields2()">Clear Fields</button>
+        </div>
+ <!----------------------------------------------------------------------------------------->
+
+
+
+        </div>
+        <div class="col-md-4 banner-ad-desktop">
+        </div>
+        <div class="col-xs-12 d-block d-md-none display-mobile-ad">
+        </div>
+      </div>
+    
+  
+  <!--------- ----percentage-calculator-- END-----------------------------//--My personal Brokerage Calculator-->
+
+ 
+
+
+        <!--My personal Brokerage Calculator-->
+
+
+ <div id="Brokerage-Calculator" class="hide">
+   <div class="row">
+    <div class="col-md-12 st">
+      <header>
+  <h2 class="headers"></h2>
+</header>
+<hr>
+</div></div>
+
+ <!--- <div class="flex">-->
+    <div class="row">
+      <div id="bgx-result-wrapper" class="col-md-4">
+        <div>
+
+      <!----------------------------------------------------------------------------------------->     
+    <!--input for BUYS-->
+      <label>Buy</label><br>
+      <input class="from-control"type="number" id="inp1" placeholder="1500" autocomplete="off"onchange="Brokerage()"/>
+      <span id="error1"></span>
+    </div>
+    
+     <!----------------------------------------------------------------------------------------->    
+     <div>
+      <!--   input for Sells label for="inp2">Sell</label><br-->
+      <label>Sell</label><br>
+      <input class="from-control"type="number"type="number" id="inp2" placeholder="1570" autocomplete="off"onchange="Brokerage()"/>
+      <span id="error2"></span>
+    </div>
+  
+    <div>
+     <!--input for no. of shares -->
+      <label>Quantity</label><br>
+      <input class="from-control" type="number" id="inp3" placeholder="100" autocomplete="off"onchange="Brokerage()"/>
+       <span id="error3"></span>
+    </div>
+    </div>
+    <!----------------------------------------------10-_complet------------------------------------->    
+
+<!--   Radio boxes For NSE and BSE --
+  <div class="radios"-->
+
+    <div class="col-md-2"></div>
+      <div class="col-md-4 banner-ad-desktop">
+        </div>
+      </div>
+      
+<!----------------------------------------------12-_complet------------------------------------->    
+ <div class="row">
+  <div class="col-md-4">
+    <div class="r-sip"> 
+<!----------------------------------------------15-_complet------------------------------------->    
+      <input class="from-control"type="radio" name="radio-input" id="inp4" checked value="NSE" onchange="Brokerage()"/>
+      <label>NSE</label>
+    
+    <div>
+      <input class="from-control" type="radio" name="radio-input" id="inp4"value="BSE" onchange="Brokerage()"/>
+      <label>BSE</label>
+    </div>
+  </div>
+ 
+  <!----------------------------------------------15-_complet----------------------------------
+<button id="submit">Submit</button>---------------------->    
+
+<!--   showing all charges in front of every charges name -->
+<div class="row">
+  <div class="col-md-12 st">
+<button class="btn btn-success ans-btn"id="submit" onclick="Brokerage()">Submit</button>  
+<button class="btn btn-warning ans-btn"onclick="clearFields9()">clearfields</button>  
+
+
+    <!--turnover -->
+
+    <div class="results">
+<div class="charges">
+  <div class="results" style="font-size:15px;padding:10px 0 10px 0;margin-bottom:10px;"><p>Turnover <span id="ch1">0</span></p></div>
+    
+
+  <!--Total tax and charges -->
+    <div class="results" style="font-size:15px;padding:10px 0 10px 0;margin-bottom:10px;"><p>total Tax and Charges <span id="ch9">0</span></p></div>
+
+
+<div class="results" style="font-size:17px;padding:10px 0 10px 0;margin-bottom:10px;"><p>Net P&L <span id="ch11">0</span></p>
+    </div>
+
+    <!--brokerage -->
+
+    <div class="results" style="font-size:15px;padding:10px 0 10px 0;margin-bottom:10px;"><p>Brokerage <span id="ch2">0</span></p></div>
+    <!--STT total -->
+    <div class="results"><p>STT Total <span id="ch3">0</span></p></div>
+    <!--Exchange txn charge -->
+    <div class="results"><p>Exchange Transaction Charge <span id="ch4">0</span></p></div>
+    <!--Clearing charge --
+    <div class="results"><p>Clearing Charge <span id="ch5">0</span></p></div-->
+    <!--GST -->
+    <div class="results"><p>GST <span id="ch6">0</span></p></div>
+    <!--SEBI charges -->
+    <div class="results"><p>SEBI Charge <span id="ch7">0</span></p></div>
+    <!--Stamp duty -->
+    <div class="results"><p>Stamp Duty <span id="ch8">0</span></p></div>
+  
+    <!--Points to breakeven --
+    <div class="results"><p>Points to Breakeven <span id="ch10">0</span></p></div-->
+    
+    
+         </div></div></div></div></div></div></div>
+   </div></div>
+<!-----------brokrage script------>
+
+<!---brokrage script  end---->
+
+       <div id="crypto-calculator" class="hide">
+  <div class="row">
+                    <div class="col-md-12">
+                    <header>
+                <h2 class="box-title"></h2>
+              </header>
+              <hr>
+            </div>
+              </div>
+           <!----------------------------------------------------------------------------------------->
+           <div class="syl" >
+ <section class="content">
+                <div class="box box-success">
+                    <div class="box-header with-border">
+                        <h3 class="box-title">Total Average Price and Quantity</h3>
+                    </div>
+                 <!-- /.box-header -->
+                    <div class="box-body">
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <p class="lead">Total Average Price</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <input class="form-control" id="averagePrice" value="" disabled/>
+                            </div>
+                        </div>                        <div class="row">
+                            <div class="col-xs-4">
+                                <p class="lead">Total Quantity</p>
+                            </div>
+                            <div class="col-xs-4">
+                                <input class="form-control" id="totalQuantity" value="" disabled/>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- /.box-body -->
+                </div>
+
+
+           <section>
+           
+            <!---button onclick="history.go(0)">Refresh</button>
+<-- OR -- <button onclick="window.location.reload()">Refresh</button>
+<button onclick="window.location.href=window.syl.href">Refresh syl</button--->
+ <div class="qpa">
+             <div class="row">
+        <div id="crypto-result-wrapper" class="col-md-4">
+          <div class="crypto-wrapper">
+    <div class="box-body" id="tx-input-container">
+                        <div class="row">
+                          <div class="col-xs-4">
+                                <label for="quantity-1"></label>
+                            </div>
+                            <div class="col-xs-4">
+                                <label for="price-1"></label>
+                            </div>
+
+                            <div class="col-xs-4">
+                                <label for="average-price-1"></label>
+                            </div>
+                        </div>
+                          <div class="row">
+                            <div class="col-xs-4">
+                                <input class="form-control tx-input-field" placeholder="12" title="quantity-1" type="number" id="quantity-1" value="" />
+                          </div>
+                           <div class="col-xs-4">
+                            <input class="form-control tx-input-field"type="number" placeholder="$1000" title="Price1" id="price-1" value="" /> 
+                           </div>
+                               <div class="col-xs-4">
+                                <p class="text-aqua" type="number" title="averagePrice" id="average-price-1"></p>
+                              
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-4">
+                                <input class="form-control tx-input-field" type="number" id="quantity-2" value="" />
+                            </div>
+                            <div class="col-xs-4">
+                                <input class="form-control tx-input-field" type="number" id="price-2" value="" />
+                            </div>
+                            <div class="col-xs-4">
+                                <p class="text-aqua" type="number" id="average-price-2"></p>
+                            </div> 
+                          </div>
+                        </div>
+<br>
+                        
+                       <div class="box-footer">
+                        <div class="row">
+                          <div class="col-xs-3">
+                   <button type="button"class="btn btn-success" type="number" type="number" id="add"  type="number" ><i class="fa fa-plus" type="number"></i>Add more</button>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+              </div>
+            </section>
+           
+             <!---ok--->
+</div></div>
+<br><br><br>
+ <footer>
+    <div class="container"  class="col-md-12">  
+&copy; GEKPMS.24/08/2023 ALL IN ONE :<a href="https://whatsapp.com/channel/0029Va5O3Cq8PgsD0XqNxe3p" target="_blank">gekpmsneo.com</a>
+<br>26/09/2023 <a href="https://gekpms.netlify.app/">https://gekpms.netlify.app/</a>
+</div>
+</footer>
+
+ <!-- ./wrapper -->
+        <script src="https://tools.fromdev.com/plugins/jQuery/jquery-2.2.3.min.js"></script>
+    <script src="https://tools.fromdev.com/plugins/jQueryUI/jquery-ui.min.js"></script>
+    <script>
+        $.widget.bridge('uibutton', $.ui.button);
+    </script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="https://tools.fromdev.com/bootstrap/js/bootstrap.min.js"></script>
+    <!-- SlimScroll -->
+    <script src="https://tools.fromdev.com/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+    <!-- FastClick -->
+    <script src="https://tools.fromdev.com/plugins/fastclick/fastclick.min.js"></script>
+    <!-- AdminLTE App -->
+    <script src="https://tools.fromdev.com/dist/js/app.min.js"></script>
+    <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-50749648-2', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+
+
+<script src="plugins/selectOnFocus/jquery.selectOnFocus.min.js"></script>
+
+<script>
+    const inputTemplate = (id) => `<br/><div class="row">
+                            <div class="col-xs-4">
+                                <input class="form-control tx-input-field" id="quantity-${id}"/>
+                            </div>
+                            <div class="col-xs-4">
+                                <input class="form-control tx-input-field" id="price-${id}"/>
+                            </div>
+                            <div class="col-xs-4">
+                                <p class="text-aqua" id="average-price-${id}"></p>
+                            </div>
+                        </div>`;
+    const caculate = () => {
+        const priceQuantityPairs = [];
+        const inputRows = $(".tx-input-field").length;
+        for (let index = 1; index < (inputRows + 1); index++) {
+            const q = $(`#quantity-${index}`).val();
+            const p = $(`#price-${index}`).val();
+            $(`#average-price-${index}`).text('');
+            if(q && p) {
+                const pFloat = Number.parseFloat(p);
+                const qFloat = Number.parseFloat(q);
+                priceQuantityPairs.push({
+                    price: pFloat,
+                    quantity: qFloat
+                });
+                const avg = (qFloat > 0) ? pFloat/qFloat : 0;
+                $(`#average-price-${index}`).text(avg);
+            }
+        }
+        console.log(`TX#: ${priceQuantityPairs.length}, input #: ${$(".tx-input-field").length}`);
+        let totalQuantity = 0;
+        (priceQuantityPairs || []).forEach(pair => {
+            totalQuantity+=pair.quantity;
+        });
+        let totalPrice = 0;
+        (priceQuantityPairs || []).forEach(pair => {
+            totalPrice+=pair.price;
+        });
+        const average = (totalQuantity > 0) ? totalPrice/totalQuantity : 0;
+        $('#averagePrice').val(average);
+        $('#totalQuantity').val(totalQuantity);
+    };
+    const registerInputs = () => {
+        $(".tx-input-field").on("input", function() {
+            caculate();
+        });
+    }
+    $(document).ready(function () {
+        registerInputs();
+
+        $("#add").click(() => {
+            const nextIndex = $(".tx-input-field").length + 1;
+            $("#tx-input-container").append(inputTemplate(nextIndex));
+            registerInputs();
+        });
+        
+        $("#averagePrice").selectOnFocus();
+        $("#totalQuantity").selectOnFocus();
+        $('#calculators-category').addClass('active');
+    });
+</script>
+<!----------update----------------------------------end--------------------------------------------->
+<script>
+  // SIDE CLICK BUTTON OPEN CALCULATER
+    if ('serviceWorker' in navigator) {
+    window.addEventListener('load', function() {
+    navigator.serviceWorker.register('/stockaveragecalculator/service-worker.js');
+    });
+}
+    // Initialize deferredPrompt for use later to show browser install prompt.
+let deferredPrompt;
+let buttonInstall = document.getElementById("buttonInstall");
+buttonInstall.style.display = 'none';
+
+window.addEventListener('beforeinstallprompt', (e) => {
+  // Prevent the mini-infobar from appearing on mobile
+  e.preventDefault();
+  // Stash the event so it can be triggered later.
+  deferredPrompt = e;
+  // Update UI notify the user they can install the PWA
+  buttonInstall.style.display = 'block';
+  buttonInstall.addEventListener('click', async () => {
+  // Hide the app provided install promotion
+  // buttonInstall.style.display = 'none';
+  // Show the install prompt
+  deferredPrompt.prompt();
+  // Wait for the user to respond to the prompt
+  const { outcome } = await deferredPrompt.userChoice;
+  // Optionally, send analytics event with outcome of user choice
+  console.log(`User response to the install prompt: ${outcome}`);
+  // We've used the prompt, and can't use it again, throw it away
+  deferredPrompt = null;
+});
+  // Optionally, send analytics event that PWA install promo was shown.
+  console.log(`'beforeinstallprompt' event was fired.`);
+});
+</script>
+   <script>
+const intlLanguage = Intl.DateTimeFormat().resolvedOptions().timeZone === 'Asia/Calcutta' ? 'en-IN' : 'en-US';
+
+function unitChanged(id, error) {
+    const unit1 = document.getElementById("units1").value;
+    const price1 = document.getElementById("Price1").value;
+    const unit2 = document.getElementById("units2").value;
+    const price2 = document.getElementById("Price2").value;
+
+    if(unit1 !='' && price1 !='' && unit2 !='' && price2 != '') {
+        getAverage();
+    }
+
+
+    if (document.getElementById(id).value != '') {
+      document.getElementById(error).innerHTML = '';
+      return;
+    } else {
+      document.getElementById(error).innerHTML = 'Field is Required';
+    }
+   
+  }
+
+
+  function getAverage() {
+
+    if (document.getElementById("units1").value == '') {
+      document.getElementById("error1").innerHTML = "Units required";
+      return;
+    } else if (document.getElementById("Price1").value == '') {
+      document.getElementById("error2").innerHTML = "Price required";
+      return;
+    } else if (document.getElementById("units2").value == '') {
+      document.getElementById("error3").innerHTML = "Units required";
+      return;
+    } else if (document.getElementById("Price2").value == '') {
+      document.getElementById("error4").innerHTML = "Price required";
+      return;
+    }
+
+    var unit1 = document.getElementById("units1").value;
+    var price1 = document.getElementById("Price1").value;
+    var unit2 = document.getElementById("units2").value;
+    var price2 = document.getElementById("Price2").value;
+
+    var totalAmount = Number(((unit1 * price1) + (unit2 * price2)).toFixed(2));
+    var totalUnits = +unit1 + +unit2;
+    var averagePrice = Number((((unit1 * price1) + (unit2 * price2)) / totalUnits).toFixed(2));
+    document.getElementById("investedamount1").innerHTML ="<span>Amount invested on 1st buy: </span>  <span class='unit-amount'>" + (unit1 * price1).toLocaleString(intlLanguage) + "</span>";
+    document.getElementById("investedamount2").innerHTML ="<span>Amount invested on 2nd buy: </span> <span class='unit-amount'>" + (unit2 * price2).toLocaleString(intlLanguage) + "</span>";
+    document.getElementById("result").innerHTML = "<span>Total units </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<bold>"
+      + totalUnits + "</bold><br/><br/><span>Average Price</span> &nbsp;&nbsp;&nbsp;<bold>" + averagePrice.toLocaleString(intlLanguage) + "</bold>" 
+      + "<br/><br/><span>Total Amount</span> &nbsp;&nbsp;&nbsp;<bold>"
+      + totalAmount.toLocaleString(intlLanguage) + "</bold>";
+  }
+  function clearFields() {
+    document.getElementById("units1").value = '';
+    document.getElementById("Price1").value = '';
+    document.getElementById("units2").value = '';
+    document.getElementById("Price2").value = '';
+    document.getElementById("result").innerHTML = '';
+    document.getElementById("investedamount1").innerHTML = '';
+    document.getElementById("investedamount2").innerHTML = '';
+  }
+
+
+  function activeSection(value) {
+      switch(value) {
+          case 'ac':
+              document.getElementById("average-calculator").classList.remove("hide"); 
+              document.getElementById("average-calculator").classList.add("active");
+
+              document.getElementById("sip-calculator").classList.remove("active");
+              document.getElementById("sip-calculator").classList.add("hide");
+
+              document.getElementById("percentage-calculator").classList.remove("active");
+              document.getElementById("percentage-calculator").classList.add("hide");
+
+               document.getElementById("Brokerage-Calculator").classList.remove("active");
+              document.getElementById("Brokerage-Calculator").classList.add("hide");
+
+              document.getElementById("crypto-calculator").classList.remove("active");
+              document.getElementById("crypto-calculator").classList.add("hide");
+
+
+
+              document.getElementById("ac").classList.add("active");
+              document.getElementById("sc").classList.remove("active");
+              document.getElementById("pc").classList.remove("active");
+              document.getElementById("bc").classList.remove("active");
+              document.getElementById("cy").classList.remove("active");
+          break;
+          case 'sc': 
+              document.getElementById("sip-calculator").classList.remove("hide");
+              document.getElementById("sip-calculator").classList.add("active");
+
+              document.getElementById("average-calculator").classList.remove("active");
+              document.getElementById("average-calculator").classList.add("hide");
+
+              document.getElementById("percentage-calculator").classList.remove("active");
+              document.getElementById("percentage-calculator").classList.add("hide");
+
+              document.getElementById("Brokerage-Calculator").classList.remove("active");
+              document.getElementById("Brokerage-Calculator").classList.add("hide");
+
+document.getElementById("crypto-calculator").classList.remove("active");
+              document.getElementById("crypto-calculator").classList.add("hide");
+
+
+
+
+              document.getElementById("sc").classList.add("active");
+              document.getElementById("ac").classList.remove("active");
+              document.getElementById("pc").classList.remove("active");
+              document.getElementById("bc").classList.remove("active");
+              document.getElementById("cy").classList.remove("active");
+          break;
+          case 'pc': 
+             document.getElementById("percentage-calculator").classList.remove("hide");
+             document.getElementById("percentage-calculator").classList.add("active");
+         
+            document.getElementById("Brokerage-Calculator").classList.remove("active");
+              document.getElementById("Brokerage-Calculator").classList.add("hide");
+
+          document.getElementById("sip-calculator").classList.remove("active");
+          document.getElementById("sip-calculator").classList.add("hide");
+
+          document.getElementById("average-calculator").classList.remove("active");
+          document.getElementById("average-calculator").classList.add("hide");
+
+          document.getElementById("crypto-calculator").classList.remove("active");
+              document.getElementById("crypto-calculator").classList.add("hide");
+
+          document.getElementById("pc").classList.add("active");
+          document.getElementById("bc").classList.remove("active");
+           document.getElementById("sc").classList.remove("active");
+          document.getElementById("ac").classList.remove("active");
+          document.getElementById("cy").classList.remove("active");
+      break;
+    case 'bc':
+              document.getElementById("Brokerage-Calculator").classList.remove("hide");
+              document.getElementById("Brokerage-Calculator").classList.add("active");
+
+ 
+             document.getElementById("percentage-calculator").classList.add("hide");
+          document.getElementById("percentage-calculator").classList.remove("active");
+
+
+          document.getElementById("sip-calculator").classList.remove("active");
+          document.getElementById("sip-calculator").classList.add("hide");
+
+
+          document.getElementById("average-calculator").classList.remove("active");
+          document.getElementById("average-calculator").classList.add("hide");
+
+          
+          document.getElementById("crypto-calculator").classList.remove("active");
+              document.getElementById("crypto-calculator").classList.add("hide");
+
+
+            document.getElementById("bc").classList.add("active");
+            document.getElementById("pc").classList.remove("active");
+           document.getElementById("sc").classList.remove("active");
+          document.getElementById("ac").classList.remove("active");
+          document.getElementById("cy").classList.remove("active");
+        break;
+    case 'cy':
+document.getElementById("crypto-calculator").classList.remove("hide");
+              document.getElementById("crypto-calculator").classList.add("active");
+
+  document.getElementById("average-calculator").classList.remove("active");
+          document.getElementById("average-calculator").classList.add("hide");
+
+               document.getElementById("sip-calculator").classList.remove("active");
+          document.getElementById("sip-calculator").classList.add("hide");
+
+          document.getElementById("percentage-calculator").classList.remove("active");   
+         document.getElementById("percentage-calculator").classList.add("hide");
+          
+
+
+        document.getElementById("Brokerage-Calculator").classList.remove("active");
+  
+ document.getElementById("Brokerage-Calculator").classList.add("hide");
+             
+        
+document.getElementById("cy").classList.add("active");
+            document.getElementById("ac").classList.remove("active");
+           document.getElementById("sc").classList.remove("active");
+          document.getElementById("pc").classList.remove("active");
+          document.getElementById("bc").classList.remove("active");
+      break;
+
+          default: break;
+      }
+  }
+
+  function sipCalculator() {
+      var investment = parseInt(document.getElementById("investment").value); 
+      var rateOfInterest = parseInt(document.getElementById("rateOfInterest").value);
+      var years = parseInt(document.getElementById("years").value);
+      var monthlyRate = rateOfInterest/12/100;  
+      var months= years*12;
+      var totalGain = (investment *(Math.pow((1 + monthlyRate), months) - 1)/monthlyRate *(1+monthlyRate)); 
+      if(investment && rateOfInterest && years) {
+          document.getElementById("im").innerHTML = Number((investment * months).toFixed(2)).toLocaleString(intlLanguage);  
+          document.getElementById("tm").innerHTML = Number(totalGain.toFixed(2)).toLocaleString(intlLanguage);
+          document.getElementById("gm").innerHTML = Number((totalGain - (investment * months)).toFixed(2)).toLocaleString(intlLanguage) ;
+      }
+      }
+
+function clearFields1() {
+    document.getElementById("investment").value = '';
+    document.getElementById("rateOfInterest").value = '';
+    document.getElementById("years").value = '';
+    document.getElementById("tm").innerHTML = '0';
+    document.getElementById("im").innerHTML = '0';
+    document.getElementById("gm").innerHTML = '0';
+  }
+
+  function checkPercentage() {
+  let num = Number(document.getElementById("percentageNumber").value);
+  let percent = Number(document.getElementById("percentage").value);
+  let result = document.getElementById("percentageResult");
+
+  if (num == '' || percent == '' || num == 0 || percent == 0) {
+    return;
+  }
+
+  let finalNum = (num/100) * percent;
+
+  result.innerHTML = percent + " Percentage(%) of " + num + " is = " + finalNum.toFixed(2);
+} 
+
+/*
+-------------------19/5/24--------------------
+*/
+function clearFields2() {
+    document.getElementById("percentageNumber").value = '';
+    document.getElementById("percentage").value = '';
+    document.getElementById("percentageResult").value = '0';
+    document.getElementById("percentageResult").innerHTML = '0';
+    document.getElementById(" percentageResult").innerHTML = '0';
+    document.getElementById("percentageResult").innerHTML = '0';
+  }
+////////////////////////////////////////////////////////////////////////////brokrage script st
+
+    
+    
+    
+</script>
+<script>
+  function brokerage(x,y,z){
+  let sellside=((x*0.03*z)/100).toFixed(3);
+  let buyside=((y*0.3*z)/100).toFixed(3);
+  if (sellside>20 && buyside>20){
+    sellside=20;
+    buyside=20;
+  }
+  return Number(sellside)+Number(buyside);
+}
+let btn=document.querySelector('#submit');
+btn.addEventListener('click',()=>{
+  let buy=document.querySelector('#inp1').value;
+  //variable for sell time price of stock
+  let sell=document.querySelector('#inp2').value;
+  // no of stock buys
+  let quantity=document.querySelector('#inp3').value;
+  //total turnover in buy and sell side with quantity
+    
+  
+  let to=document.querySelector('#ch1');
+  //variable for brokerage charge fees
+  let br=document.querySelector('#ch2');
+  //variable for security transaction charges
+  let stt=document.querySelector('#ch3');
+    let etc=document.querySelector('#ch4');
+ //clearing charges
+  let cc=document.querySelector('#ch5');
+  //
+  //variable for GST of (brokerage+Security transaction tax)
+  let gst=document.querySelector('#ch6');
+  
+  //variable for sebi
+  let sebi=document.querySelector('#ch7');
+  //variable for stamp duty charges
+  let sd=document.querySelector('#ch8');
+  //variable for total tax charges
+  let tt=document.querySelector('#ch9');
+  //variable for point to breakeven
+  let ptb=document.querySelector('#ch10');
+  //variable for total net and profit loss
+  let net=document.querySelector('#ch11');
+  let a=Number(buy);
+  let b=Number(sell);
+  let c=Number(quantity);
+  //all Calculation
+ //turnover calculation
+  to.innerHTML=(a+b)*c;
+  
+  //calculation for brokerage 
+  let d=brokerage(a,b,c);
+  br.innerHTML=d.toFixed(3);
+  
+  //security transfer tax
+  stt.innerHTML=((b*c*0.025)/100).toFixed(3);
+  
+  //exchange transaction charge
+ //etc.innerHTML=((((a+b)*c)*0.00345)/100).toFixed(2);nerHTML=((((a+b)*c)*0.00345)/100).toFixed(2); 
+  etc.innerHTML=((((a+b)*c)*0.00325)/100).toFixed(3);nerHTML=((((a+b)*c)*0.00375)/100).toFixed(3);
+  
+    //gst
+gst.innerHTML=(((Number(br.innerHTML)+Number(etc.innerHTML)))*18/100).toFixed(3);
+  
+  //SEBI charges
+  sebi.innerHTML=((Number(to.innerHTML)*10)/10000000).toFixed(3);
+  
+  //stamp duty charges
+  sd.innerHTML=((a*c*0.003)/100).toFixed(3);
+  
+  //total charges
+  tt.innerHTML=(Number(br.innerHTML)+Number(stt.innerHTML)+Number(etc.innerHTML)+
+    Number(gst.innerHTML)+Number(sebi.innerHTML)+Number(sd.innerHTML)).toFixed(3);
+ 
+  
+  //net profit & loss
+  nets=((b-a)*c-Number(tt.innerHTML)).toFixed(3);
+  if (nets<0){
+    net.innerHTML=nets;
+    net.style.color="red"
+  }
+  else{
+  //nets=((a-c)*b-Number(tt.innerHTML)).toFixed(3);
+    net.innerHTML=nets;
+    net.style.color="green"
+  }
+  
+
+/*-------------new add--------------*/
+  function clearFields9() {
+    document.getElementById("inp1").value = '';
+   document.getElementById("inp2").value = '';
+    document.getElementById("inp3").value = '';
+     document.getElementById("inp4").value = '';
+   document.getElementById("submit").value = '';
+
+   document.getElementById("ch1").value = '';
+   document.getElementById("ch9").value = '';
+   document.getElementById("ch11").value = '';
+   document.getElementById("submit").value = '';
+    document.getElementById("submit").value = '0';
+    document.getElementById("submit").innerHTML = '0';
+    document.getElementById("submit").innerHTML = '0';
+    document.getElementById("submit").innerHTML = '0';
+  }
+
+  
+
+  })
+
+</script>
+  
+</body>
+
+</html>
+
+
+
